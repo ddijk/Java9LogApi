@@ -1,11 +1,12 @@
 package nl.dijkrosoft.snippets.impl;
 
 import nl.dijkrosoft.snippets.Log;
-import org.apache.log4j.Logger;
+
+import java.util.logging.Logger;
 
 public class LogImpl implements Log {
 
-    private static final Logger LOGGER = Logger.getLogger(LogImpl.class);
+    private static final Logger LOGGER = Logger.getLogger("mylogger");
 
 
     public void log(String msg) {
